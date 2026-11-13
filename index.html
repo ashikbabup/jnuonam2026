@@ -5,21 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JNU Onam 2026</title>
     <style>
-        body {
-            background-color: #f0fff0; /* Very light green background */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-        }
+        /* 1. Full Page Background Image */
+    body {
+      margin: 0;
+      padding: 20px;
+      background-image: url('jnuonam2026.jpeg'); /* Replace with your JPEG filename */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* Keeps the background still while scrolling */
+      font-family: Arial, sans-serif;
+      
+      /* Centers the content box horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .container {
-            text-align: center;
-            padding: 40px 20px;
-        }
+    /* 2. Semi-Transparent Box Starting in the Bottom Half */
+    .content-box {
+      /* Pushes the box down to the bottom half of the screen */
+      margin-top: 45vh; 
+      margin-bottom: 50px;
+      
+      /* Semi-transparent dark background + subtle blur */
+      background-color: rgba(0, 0, 0, 0.65); 
+      backdrop-filter: blur(6px);
+      
+      color: white;
+      padding: 35px 25px;
+      border-radius: 16px;
+      max-width: 550px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        font-family: Arial, sans-serif;
+    }
+
+    .content-box h1 {
+        margin-top: 0;
+        text-align: center;
+        padding: 40px 20px;
+    }
         
         .onam-title {
             font-size: 4rem;

@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNU Onam 2026</title>
+    <style>
+        /* 1. Full Page Background Image */
+    body {
+      margin: 0;
+      padding: 20px;
+      /*background-image: url('jnuonam2026.jpeg'); /* Replace with your JPEG filename */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* Keeps the background still while scrolling */
+      font-family: Arial, sans-serif;
+      
+      /* Centers the content box horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
+    /* 2. Semi-Transparent Box Starting in the Bottom Half */
+    .content-box {
+      /* Pushes the box down to the bottom half of the screen */
+      margin-top: 55vh; 
+      margin-bottom: 50px;
+      
+      /* Semi-transparent dark background + subtle blur */
+      background-color: rgba(0, 0, 0, 0.65); 
+      backdrop-filter: blur(6px);
+      
+      color: white;
+      padding: 35px 25px;
+      border-radius: 16px;
+      max-width: 550px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        font-family: Arial, sans-serif;
+    }
+
+         .onasadaya-section {
+            padding: 15px;
+            /* background-color: rgba(15, 23, 42, 0.8); /* Blue background */
+            /*  backdrop-filter:blur(8px); */
+             color: #facc15; /* yellow text */
+            border-radius: 8px;
+            display: block;
+        }
+        
+         .onasadaya-title {
+            font-size: 2.8rem;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+        
+        .virtual-queue {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #991b1b; /* red color */
+            line-height: 1.2;
+            padding: 15px;
+            /* background-color: rgba(250, 204, 21, 0.8); /* yellow background */
+            /* backdrop-filter: blur(8px); */
+            border-radius: 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-box">
+        <div class="onasadaya-section">
+            <div class="onasadaya-title">Onasadhya</div>
+            <div class="onasadaya-time"><strong>7 PM</strong> onwards</div>
+            <div class="virtual-queue">
+            <button style="
+            background-color: rgba(126, 34, 206, 0.8);
+            color: white; 
+            font-size: 18px; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer;" 
+                onclick="alert('Not live yet. Please check back on event day!');">
+            Join Virtual Queue
+            </button>
+            <p><br>Virtual queue will be active on  23<sup>rd</sup> November<br>Stay tuned!</p>
+            </div>
+        </div>
+        <div class="notice">
+            <p><strong>A food coupon is mandatory for entry.</strong><br>Please collect yours in advance.</p>
+        </div>
+        <div class="footer"><p>See you there! 🌸</p></div>
+    </div>
+    
+</body>
+</html>
